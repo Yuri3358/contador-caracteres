@@ -31,6 +31,7 @@ function App() {
                     onChange={e => setText(e.target.value)} 
                     maxLength={maxLength}
                     className="inputs"
+                    autoComplete="off"
                     id="textinput"
                 >
                 </textarea>
