@@ -4,7 +4,7 @@ function App() {
     const [text, setText] = React.useState(0)
     const [maxLength, setMaxLength] = React.useState(120)
     const [textColor, setTextColor] = React.useState({color: "white"})
-    const charleft = maxLength - text.length || 0
+    const charleft = maxLength - (text.length || 0)
     
     React.useEffect(() => {
         if (charleft == 0) {
