@@ -6,13 +6,13 @@ function App() {
     const charleft = maxLength - (text.length || 0)
 
     return (
-        <div id="content">
+        <section id="content">
             <h1>Contador de caracteres</h1>
             <textarea onChange={e => setText(e.target.value)} maxLength={maxLength}></textarea>
             <input type="number" onChange={e => setMaxLength(e.target.value)}></input>
             <p>{text.length || 0} caracteres</p>
             <p>{charleft} caracteres restantes</p>
-        </div>
+        </section>
     )
 }
 
