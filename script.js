@@ -16,9 +16,11 @@ function App() {
         <section id="content">
             <h1>Contador de caracteres</h1>
             <div>
+                <label htmlFor="maxinput">Tamanho máximo</label>
                 <input 
                     type="number" 
                     onChange={e => setMaxLength(e.target.value)}
+                    className="inputs"
                     id="maxinput"
                 >
                 </input>
@@ -28,7 +30,9 @@ function App() {
                 <textarea 
                     onChange={e => setText(e.target.value)} 
                     maxLength={maxLength}
-                    id="textinput">
+                    className="inputs"
+                    id="textinput"
+                >
                 </textarea>
             </div>
             
