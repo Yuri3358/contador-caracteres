@@ -9,7 +9,6 @@ function App() {
         <section id="content">
             <h1>Contador de caracteres</h1>
             <div>
-                <label htmlFor="maxinput">Tamanho máximo</label>
                 <input 
                     type="number" 
                     onChange={e => setMaxLength(e.target.value)}
