@@ -3,7 +3,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 function App() {
     const [text, setText] = React.useState(0)
     const [maxLength, setMaxLength] = React.useState(120)
+    const [textColor, setTextColor] = React.useState({color: "white"})
     const charleft = maxLength - text.length || 0
+    
+    React.useEffect(() => {
+        if (charleft == 0) {
+            setTextColor({color: "red"})
+        }
+    }, [text.length])
 
     return (
         <section id="content">
@@ -26,7 +33,7 @@ function App() {
             </div>
             
             <p>{text.length || 0} caracteres</p>
-            <p><span>{charleft}</span> caracteres restantes</p>
+            <p><span style={textColor}>{charleft}</span> caracteres restantes</p>
         </section>
     )
 }
