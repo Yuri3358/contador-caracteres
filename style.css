@@ -17,6 +17,10 @@ label {
 #content {
     background-color: rgb(47, 47, 47);
     color: white;
+    width: 20cm;
+    text-align: center;
+    border-style: groove;
+    border-color: black;
 }
 
 .inputs {
