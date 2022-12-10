@@ -21,6 +21,7 @@ label {
     text-align: center;
     border-style: groove;
     border-color: black;
+    margin: auto;
 }
 
 .inputs {
