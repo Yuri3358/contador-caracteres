@@ -33,6 +33,7 @@ function App() {
                     className="inputs"
                     autoComplete="off"
                     id="textinput"
+                    placeholder="Escreva seu texto"
                 >
                 </textarea>
             </div>
