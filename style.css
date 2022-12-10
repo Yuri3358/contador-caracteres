@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(35, 35, 35);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+label {
+    font-size: 30px;
+}
+
+#content {
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+
+.inputs {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-size: 20px;
+}
+
+#textinput {
+    border-color: grey;
+    width: 303px;
+    height: 180px;
+}
+
+#maxinput {
+    width: 2cm;
+    text-align: center;
+    margin-left: 10px;
+}
