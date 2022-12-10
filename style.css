@@ -29,6 +29,7 @@ label {
     border-color: grey;
     width: 303px;
     height: 180px;
+    resize: none;
 }
 
 #maxinput {
