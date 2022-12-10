@@ -8,10 +8,26 @@ function App() {
     return (
         <section id="content">
             <h1>Contador de caracteres</h1>
-            <textarea onChange={e => setText(e.target.value)} maxLength={maxLength}></textarea>
-            <input type="number" onChange={e => setMaxLength(e.target.value)}></input>
+            <div>
+                <label htmlFor="maxinput">Tamanho máximo</label>
+                <input 
+                    type="number" 
+                    onChange={e => setMaxLength(e.target.value)}
+                    id="maxinput"
+                >
+                </input>
+            </div>
+
+            <div>
+                <textarea 
+                    onChange={e => setText(e.target.value)} 
+                    maxLength={maxLength}
+                    id="textinput">
+                </textarea>
+            </div>
+            
             <p>{text.length || 0} caracteres</p>
-            <p>{charleft} caracteres restantes</p>
+            <p><span>{charleft}</span> caracteres restantes</p>
         </section>
     )
 }
