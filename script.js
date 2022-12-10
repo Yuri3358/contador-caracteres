@@ -3,7 +3,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 function App() {
     const [text, setText] = React.useState(0)
     const [maxLength, setMaxLength] = React.useState(120)
-    const [textColor, setTextColor] = React.useState({color: "white"})
+    const [textColor, setTextColor] = React.useState({color: "yellow"})
     const charleft = maxLength - (text.length || 0)
     
     React.useEffect(() => {
@@ -37,7 +37,7 @@ function App() {
                 </textarea>
             </div>
             
-            <p>{text.length || 0} caracteres</p>
+            <p><span style={{color: "yellow"}}>{text.length || 0}</span> caracteres</p>
             <p><span style={textColor}>{charleft}</span> caracteres restantes</p>
         </section>
     )
